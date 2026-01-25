@@ -72,4 +72,4 @@ jobs:
           app-name: 'viscounterapi'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_81AC9D45C8574B7EA0CD9E20FA35318B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6249029C1544ED48F44E7666B32AF05 }}
