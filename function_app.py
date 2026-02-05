@@ -7,7 +7,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 @app.route(route="incrementVisitor", methods=["POST"])
 @app.table_output(
     arg_name="tableOutput",
-    connection="AzureWebJobsStorage",
+    connection="CosmosDBConnection",
     table_name="viscounterDB"
 )
 def increment_visitor(
