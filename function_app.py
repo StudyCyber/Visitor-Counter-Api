@@ -8,7 +8,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 @app.table_output(
     arg_name="tableOutput",
     connection="CosmosDBConnection",
-    table_name="viscounterDB"
+    table_name="COSMOS_CONTAINER"
 )
 def increment_visitor(
     req: func.HttpRequest,
